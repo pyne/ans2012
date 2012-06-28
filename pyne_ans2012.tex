@@ -21,11 +21,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 
-PyNE, or `Python for Nuclear Engineering'\footnote{http://pyne.github.com}, is a 
-nascent free and open source C++/Cython/Python package for performing common 
-nuclear engineering tasks.  This is intended as a base-level tool kit - akin to 
-SciPy or Biopython - for common algorithms inside of the nuclear science and 
-engineering domain. 
+PyNE, or `Python for Nuclear Engineering'\footnote{http://pyne.github.com}, is a
+nascent free and open source C++/Cython/Python package for performing common
+nuclear engineering tasks.  This is intended as a base-level tool kit - akin to
+SciPy or Biopython - for common algorithms inside of the nuclear science and
+engineering domain.
 
 \section{Background}
 
@@ -74,11 +74,47 @@ could easily be reused by other projects.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Description of The Actual Work}
 
-\textbf{WE SHOULD PUT SOME ACTUAL DISCUSSION OF PyNE CAPABILITIES HERE}
-This talk will contain an overview of the current capabilities of PyNE, 
-a discussion of the export control issues, a related 
-discussion on the redistribution of raw nuclear data, and how the PyNE
-team has been successful in developing highly performant tools for themselves and
+\textbf{WE SHOULD PUT SOME ACTUAL DISCUSSION OF PyNE CAPABILITIES HERE} This
+talk will contain an overview of the current capabilities of PyNE, a discussion
+of the export control issues, a related discussion on the redistribution of raw
+nuclear data, and how the PyNE team has been successful in developing highly
+performant tools for themselves and.
+
+\subsection{NJOY Module}
+
+Recently, the developers of PyNJOY, a set of Python bindings for processing
+nuclear data using NJOY, agreed to have their work integrated with the PyNE
+project as a new NJOY module. This will help to encourage active development and
+wider participation in the project.
+
+The NJOY module provides a simple method of generating nuclear data in a variety
+of formats from raw ENDF data without the user having to worry about the exact
+format of the NJOY input files. Thus, with a single Python script, it is
+possible to process tens of hundreds of nuclides at once rather than managing
+many NJOY input files.
+
+\subsection{ACE Module}
+
+One of the most common data formats used to represent pointwise
+linearly-interpolable cross sections is the ACE (A Compact ENDF) format. This
+format was introduced by LANL for use in the MCNP \cite{mcnp} code and is now
+used by the Serpent \cite{serpent} and OpenMC \cite{openmc} Monte Carlo codes as
+well. While there are a variety of resources that allow a user to inspect and
+plot data directly from ENDF, there has generally been no good means of looking
+at processed data in the ACE format that is actually used in Monte Carlo
+simulations. As such, a module has been added to PyNE to parse and store data
+from ASCII or binary ACE files. A front-end graphical user interface is also in
+development that will give the user an easy interface to view and compare both
+cross sections and secondary energy and angle
+distributions. Figure~\ref{fig:ace-gui} shows cross section data for Pu-239
+being plotted within the GUI.
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=3.3in]{ace-gui.png}
+  \caption{Front-end graphical user interface for plotting ACE format data in
+    PyNE.}
+  \label{fig:ace-gui}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
