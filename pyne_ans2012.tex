@@ -27,6 +27,12 @@ nuclear engineering tasks.  This is intended as a base level tool kit - akin to
 SciPy or Biopython - for common algorithms in the nuclear science and
 engineering domain.
 
+The remainer of this paper is composed of a discussion of the difficulties 
+which prevented PyNE from being written earlier, a listing of the first cut 
+capabilities, and a description of why PyNE has thus far been 
+successful and what future features are currently planned.
+
+
 \section{Background}
 
 While PyNE may be considered long overdue from an external perspective, the 
@@ -88,7 +94,7 @@ There are a plethora of ways to represent nuclide names.  The
 \texttt{pyne.nucname} module may be used to convert between these various naming
 schemes. Currently the following naming conventions are supported: zzaaam, human
 readable names, MCNP, Serpent, NIST, and CINDER.  This module may convert
-between any of them.  Furthermore, it is implemented in C.
+between any of them and is implemented in C.
 
 
 \subsection{Basic Nuclear Data}
@@ -213,7 +219,7 @@ explosion,' the development team is committed to adhering to modern software
 quality development standards.  At a minimum, all contributions to PyNE must be
 tested, documented, and follow the official Python coding standard.
 
-Future work may include further NJOY-like capabilities, a fully-featured MCNP
+Future work may include more NJOY-like capabilities, a fully-featured MCNP
 interface, a common nuclear materials database, various infinite medium
 diffusion solvers, deep geologic repository modeling functionality, and Bateman
 equation solvers.
