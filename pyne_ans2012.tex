@@ -112,8 +112,8 @@ and HDF5 persistence.  This class may be found within \texttt{pyne.material}.
 The \texttt{pyne.cccc} module contains a number of classes for reading various cross section, 
 flux, geometry, and data files with specifications given by the Committee for 
 Computer Code Coordination. The following types of files can be read using 
-classes from this module: ISOTXS, DLAYXS, BRKOXS, RTFLUX, ATFLUX, RZFLUX, MATXS, 
-and SPECTR.
+classes from this module: ISOTXS, DLAYXS 
+and SPECTR, with plans to support BRKOXS, RTFLUX, ATFLUX, RZFLUX, and MATXS.
 
 \subsection{ACE Module}
 
@@ -173,6 +173,13 @@ Pyne contains support for reading in Serpent's three types of output files:
 \texttt{*.m} format and are read in 
 as Python dictionaries of numpy arrays and Materials.  They may be optionally 
 written out to corresponding \texttt{*.py} files and imported later.
+
+\subsection{MCNP5 Support}
+MCNP5 \cite{mcnp} is a general purpose continuous energy Monte Carlo
+radiation transport code.  Pyne contains support for reading some data
+from MCTAL files and for reading and writing surface source files
+(SSW/SSR).  Additions are underway for reading all MCTAL data and mesh
+tally (MESHTAL) data.
 
 \subsection{NJOY Module}
 Recently the developers of PyNjoy \cite{dragon}, a set of Python bindings for processing
