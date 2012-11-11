@@ -292,6 +292,10 @@ Whirlwind Tour!
 
 ORIGEN Parameter Sweep
 =============================
+.. raw:: pdf
+
+    Spacer 0 40
+
 .. code-block:: python
 
     from subprocess import check_call
@@ -305,6 +309,14 @@ ORIGEN Parameter Sweep
     water.from_atom_frac({'H1': 2.0, 'O16': 1.0})
     water.mass = 1E3
 
+ORIGEN Parameter Sweep
+=============================
+.. raw:: pdf
+
+    Spacer 0 65
+
+.. code-block:: python
+
     # Make a tape4 file for water
     origen22.write_tape4(water)
 
@@ -312,15 +324,22 @@ ORIGEN Parameter Sweep
     #   * Just output the concentration tables
     #   * The cross-section library numbers must 
     #     the library / deck numbers in tape9 
-    origen22.write_tape5_irradiation("IRF", 1000.0, 4E14,
-                                     xsfpy_nlb=(381, 382, 383),
+    origen22.write_tape5_irradiation("IRF", 1000.0, 4E14, xsfpy_nlb=(381, 382, 383),
                                      out_table_num=[5])
 
     # Grab a base tape9 from which we will overlay new values
     # This must be supplied by the user
     base_tape9 = origen22.parse_tape9("BASE_TAPE9.INP")
-
     base_h1_xs = base_tape9[381]['sigma_gamma'][10010]
+
+
+ORIGEN Parameter Sweep
+=============================
+.. raw:: pdf
+
+    Spacer 0 25
+
+.. code-block:: python
 
     # Init a dumb overlay tape9
     overlay_tape9 = {381: {'_type': 'xsfpy',
