@@ -84,7 +84,7 @@ As a free & open project, we want people (grad students) to stop
 .. break
 
 The wheel that we do invent will be natural, fast, tested, documented, and 
-reproducible.
+reproducible.  We are not afraid of scope explosion!
 
 .. break
 
@@ -99,6 +99,54 @@ This means less overhead for maintanence and bug fixes.
 ..  |no-wheel| image:: img/no-wheel.jpg
                 :scale: 100%
 
+Whirlwind Tour!
+==============================
+
+.. container:: main-title
+
+    Data Structures
+
+Materials
+==============================
+PyNE materials are the primary object for sets of radionuclides, 
+inspired by NumPy arrays and Python dicts.
+
+.. break
+
+.. code-block:: python
+
+    In [1]: from pyne.material import Material
+
+    In [2]: leu = Material({'U238': 0.96, 'U235': 0.04}, 42)
+
+    In [3]: leu
+    Out[3]: pyne.material.Material({922350: 0.04, 922380: 0.96}, 42.0, -1.0, {})
+
+    In [4]: nucvec = {10010:  1.0, 80160:  1.0, 691690: 1.0, 922350: 1.0,
+       ...:           922380: 1.0, 942390: 1.0, 942410: 1.0, 952420: 1.0,
+       ...:           962440: 1.0}
+
+    In [5]: mat = Material(nucvec)
+
+    In [6]: weird_mat = leu + mat * 18
+
+    In [7]: leu.comp[922350]
+    Out[7]: 0.04
+
+    In [8]: leu['U235']
+    Out[8]: 1.68
+
+    In [9]: weird_mat['U':'Am']
+    Out[9]: pyne.material.Material({922350: 0.0736, 922380: 0.8464, 942390: 0.04, 942410: 0.04}, 50.0, -1.0, {})
+
+
+Notes
+==============================
+come to your house
+
+M&C tutorial
+
+Blue sky afterwards
 
 
 Questions
