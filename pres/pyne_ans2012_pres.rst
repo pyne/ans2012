@@ -366,6 +366,81 @@ ORIGEN Parameter Sweep
     print "H2 Concentration: ", h2_concentration
 
 
+Multicomponent Enrichment
+==============================
+Here are the matched abundance ratio cascade equations:
+
+.. math::
+
+    \frac{x_j^P}{x_j^F}\cdot\frac{P}{F} - \frac{\beta_j^{N_T+1} - 1}{\beta_j^{N_T+1} - \beta_j^{-N_P}} = 0
+
+.. raw:: pdf
+
+    Spacer 0 20
+
+.. math::
+
+    \left(\frac{x_j^F}{\frac{T}{F}} \cdot \frac{1 - \beta_i^{-N_P}}{\beta_j^{N_T+1} - \beta_j^{-N_P}} \right) - ( x_j^T\cdot\sum_i^{I} x_i^T ) = 0
+
+.. raw:: pdf
+
+    Spacer 0 20
+
+.. math::
+
+    \min\left[\frac{L}{F}\right]\to \frac{d}{dM^*} \frac{L}{F} = 0
+
+.. break
+
+What if we solved these equations symbolically, rather than numerically...
+
+
+Multicomponent Enrichment
+==============================
+...and use code generation to produce a blazing solver.
+
+.. break
+
+.. raw:: pdf
+
+    Spacer 0 25
+
+.. image:: img/codegen_pipeline.png
+    :scale: 75%
+    :align: center
+
+.. break
+
+.. raw:: pdf
+
+    Spacer 0 25
+
+.. image:: img/loverf.png
+    :scale: 40%
+    :align: center
+
+
+Multicomponent Enrichment
+==============================
+We get really big speedups (20-300x)!
+
+.. raw:: pdf
+
+    Spacer 0 235
+
+.. container:: align-center
+
+    |solver|  |min|
+
+    Solver time per iteration and Minimization time.
+
+.. |solver| image:: img/solver_exec_times.png
+                :scale: 60%
+                
+.. |min| image:: img/min_exec_times.png
+                :scale: 60%
+
+                
 Notes
 ==============================
 come to your house
