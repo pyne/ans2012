@@ -13,22 +13,46 @@ ANS Winter 2012
 
     The Univ. of Chicago, MIT, Univ. Wisconsin - Madison
 
-    *scopatz@gmail.com
+    \*scopatz@gmail.com
 
 
-What is HDF5?
+What is PyNE?
 ==============================
-HDF5 stands for (**H**)eirarchical (**D**)ata (**F**)ormat (**5**)ive.
+PyNE is a free & open source nuclear engineering toolkit.
 
 .. break
 
-It is supported by the lovely people at 
+It aims to be **fast** and **usable**.
 
 .. break
 
-At its core HDF5 is binary file type specification.
+Here is our software stack:
 
-.. break
+.. raw:: pdf
+
+    Spacer 0 35
+
+.. image:: img/stack1.png
+    :scale: 400%
+    :align: center
+
+What is PyNE?
+==============================
+PyNE is a free & open source nuclear engineering toolkit.
+
+It aims to be **fast** and **usable**.
+
+Here is our software stack:
+
+.. raw:: pdf
+
+    Spacer 0 35
+
+.. image:: img/stack2.png
+    :scale: 400%
+    :align: center
+
+
 
 
 Questions
