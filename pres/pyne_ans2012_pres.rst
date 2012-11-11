@@ -241,6 +241,40 @@ Data Supported
 * Cinder cross sections (!), Cinder/MCNP
 
 
+Data Interface
+==============================
+PyNE also provides a hgh-level API to most data.
+
+.. break
+
+.. code-block:: python
+
+    In [1]: from pyne import data
+
+    In [2]: data.half_life(922350)
+    Out[2]: 2.22165504e+16
+
+    In [3]: data.atomic_mass('Pu-239')
+    Out[3]: 239.052164844
+
+    In [4]: data.natural_abund(60130)
+    Out[4]: 0.0111
+
+    In [11]: from pyne.xs.data_source import EAFDataSource
+
+    In [12]: eds = EAFDataSource()
+
+    In [17]: eds.reaction('U235', '2n')[:40]
+    Out[17]: 
+    array([ 0.172965  ,  0.226392  ,  0.250503  ,  0.293399  ,  0.389548  ,
+            0.428117  ,  0.464678  ,  0.502925  ,  0.551846  ,  0.610356  ,
+            0.706833  ,  0.761946  ,  0.820321  ,  0.835057  ,  0.825195  ,
+            0.796091  ,  0.742308  ,  0.685149  ,  0.62169   ,  0.556779  ,
+            0.501671  ,  0.457633  ,  0.424061  ,  0.386623  ,  0.346846  ,
+            0.305083  ,  0.21849   ,  0.114091  ,  0.0347829 ,  0.00153177,
+            0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+            0.        ,  0.        ,  0.        ,  0.        ,  0.        ])
+
 
 
 Notes
