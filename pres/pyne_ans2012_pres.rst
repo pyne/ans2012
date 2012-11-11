@@ -76,6 +76,30 @@ approach with three main thrusts:
     * Data 
 
 
+What is PyNE's Purpose?
+==============================
+As a free & open project, we want people (grad students) to stop 
+*constantly* reinventing the wheel. |no-wheel|
+
+.. break
+
+The wheel that we do invent will be natural, fast, tested, documented, and 
+reproducible.
+
+.. break
+
+This will allow *everyone* to shorten development time by more 
+quickly being able to spin up new students, test new ideas, contribute 
+back, and publish.
+
+.. break
+
+This means less overhead for maintanence and bug fixes.
+
+..  |no-wheel| image:: img/no-wheel.jpg
+                :scale: 100%
+
+
 
 Questions
 ===============================
