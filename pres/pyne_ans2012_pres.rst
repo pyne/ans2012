@@ -243,7 +243,7 @@ Data Supported
 
 Data Interface
 ==============================
-PyNE also provides a hgh-level API to most data.
+PyNE also provides a high-level API to most data.
 
 .. break
 
@@ -257,8 +257,15 @@ PyNE also provides a hgh-level API to most data.
     In [3]: data.atomic_mass('Pu-239')
     Out[3]: 239.052164844
 
-    In [4]: data.natural_abund(60130)
-    Out[4]: 0.0111
+    In [4]: c13 = data.natural_abund(60130)                    
+
+Data Interface
+==============================
+.. raw:: pdf
+
+    Spacer 0 75
+
+.. code-block:: python
 
     In [11]: from pyne.xs.data_source import EAFDataSource
 
