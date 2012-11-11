@@ -53,6 +53,28 @@ Here is our software stack:
     :align: center
 
 
+What is PyNE's Goal?
+==============================
+As a toolkit, PyNE is the substrate on which 
+nuclear science and engineering problems are solved.  
+
+.. break
+
+The goal is to be **useful**.  Therefore new development takes an engineering 
+approach with three main thrusts:
+
+.. break
+
+    * Data structures
+
+.. break
+
+    * Algorithms
+
+.. break
+
+    * Data 
+
 
 
 Questions
