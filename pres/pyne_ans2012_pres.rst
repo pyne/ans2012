@@ -206,6 +206,42 @@ We have identified three orthoganal tiers of data:
 .. image:: img/data-tiers.png
     :scale: 300%
 
+Data Supported
+==============================
+.. container:: gray-and-small
+
+    \* == redistributable, ! == closed:
+
+.. break
+
+* Atomic masses (\*), from Atomic Mass Data Center
+
+.. break
+
+* Decay data from ENSDF, IAEA
+
+.. break
+
+* Neutron scattering lengths (\*), NIST
+
+.. break
+
+* KAERI cross section and isotopic abundances (\*)
+
+.. break
+
+* Materials Compendium (\*), PNNL
+
+.. break
+
+* EAF cross sections, IAEA
+
+.. break
+ 
+* Cinder cross sections (!), Cinder/MCNP
+
+
+
 
 Notes
 ==============================
