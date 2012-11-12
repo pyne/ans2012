@@ -69,6 +69,11 @@
                 "spaceAfter": 20,
                 "fontSize": 28
                 }],
+             ["align-right", {"alignment":"right",
+                "textColor": "#77181E",
+                "spaceAfter": 20,
+                "fontSize": 28
+                }],
              ["heading" , {
                 "alignment":"center",
                 "textColor": "#452F43",

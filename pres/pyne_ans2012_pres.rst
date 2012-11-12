@@ -9,7 +9,7 @@ ANS Winter 2012
 
     November 12th, 2012, San Diego, CA
 
-    Anthony Scopatz*, Paul Romano, Kathryn Huff, Paul Willson 
+    Anthony Scopatz*, Paul Romano, Kathryn Huff, Paul Wilson 
 
     The Univ. of Chicago, MIT, Univ. Wisconsin - Madison
 
@@ -94,7 +94,7 @@ back, and publish.
 
 .. break
 
-This means less overhead for maintanence and bug fixes.
+This means less overhead for maintenance and bug fixes.
 
 ..  |no-wheel| image:: img/no-wheel.jpg
                 :scale: 100%
@@ -154,7 +154,7 @@ twice).    ACE is the most mature.
 
 Industry Standard I/O
 ==============================
-Additionally, we have I/O routines for a number of industry stadard codes:
+Additionally, we have I/O routines for a number of industry standard codes:
 
 .. break
 
@@ -185,9 +185,9 @@ Whirlwind Tour!
     Nuclear Data
 
 
-Nucelar Data
+Nuclear Data
 ==============================
-Data distribution is as imporant as code distribution.
+Data distribution is as important as code distribution.
 
 .. break
 
@@ -195,7 +195,7 @@ PyNE provides utilities for  managing basic data.
 
 .. break
 
-We have identified three orthoganal tiers of data:
+We have identified three orthogonal tiers of data:
 
 .. break
 
@@ -441,13 +441,56 @@ We get really big speedups (20-300x)!
                 :scale: 60%
 
                 
-Notes
+Onward!
 ==============================
-come to your house
+* PyNE is free & open, fast and elegant.
 
-M&C tutorial
+.. break
 
-Blue sky afterwards
+* **Contribute!**
+
+.. break
+
+    - PyNE
+
+.. break
+
+    - cyclus
+
+.. break
+
+    - OpenMC
+
+.. break
+
+.. container:: align-right
+
+    ...especially if you don't see a tool that you need.
+
+
+Onward!
+==============================
+.. raw:: pdf
+
+    Spacer 0 35
+
+* **Support:** If you need help, I will be there!
+
+.. break
+
+    - (in your lab, company, university, home...)
+
+.. break
+
+* **Come:** Attend our M&C 2013 tutorial in SLC in May!
+
+.. break
+
+.. raw:: pdf
+
+    Spacer 0 35
+
+* **Stay:** Blue sky discussion right after this session!
 
 
 Questions
