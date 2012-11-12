@@ -78,7 +78,7 @@ approach with three main thrusts:
 
 What is PyNE's Purpose?
 ==============================
-As a free & open project, we want people (grad students) to stop 
+As a BSD-licensed project, we want people (grad students) to stop 
 *constantly* reinventing the wheel. |no-wheel|
 
 .. break
@@ -211,8 +211,6 @@ Data Supported
 .. container:: gray-and-small
 
     \* == redistributable, ! == closed:
-
-.. break
 
 * Atomic masses (\*), from Atomic Mass Data Center
 
