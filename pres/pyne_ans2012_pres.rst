@@ -500,3 +500,6 @@ Questions
 .. image:: img/qm.png
     :scale: 100%
 
+.. container:: align-center
+
+    v0.2 - http://pyne.github.com/
